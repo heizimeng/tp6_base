@@ -49,7 +49,7 @@ class Request extends \think\Request
 
     /**
      * 过滤接受的参数
-     * @param string $str 需要过滤得参数
+     * @param $str 
      * @param bool $filter 是否过滤
      * @return array|mixed|string|string[]
      */

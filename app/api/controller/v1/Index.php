@@ -1,15 +1,17 @@
 <?php
 namespace app\api\controller\v1;
 
+use app\Request;
 use think\facade\Db;
 
 class Index{
 
 
-    public function index(){
+    public function index(Request $request){
+
+        $request->more([["name"],['age','','trim'],['pid', 0, '', 'cid']]);
 
 
-        Db::name('user')->select();
         return 1;
     }
 

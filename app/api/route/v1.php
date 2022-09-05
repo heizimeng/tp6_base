@@ -8,7 +8,7 @@ use think\Response;
 
 Route::group(function (){
 
-    Route::get('index','v1.Index/index');
+    Route::post('index','v1.Index/index');
 
 });
 
